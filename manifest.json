@@ -22,8 +22,8 @@
   },
   "permissions": ["activeTab"],
   "content_scripts": [{
-       "matches": ["*://*/*"],
-       "js": ["jquery-3.3.1.min.js","contentScript.js"]
+      "matches": ["*://*/*"],
+      "js": ["jquery-3.3.1.min.js", "contentScript.js"]
    }],
   "manifest_version": 2
 }
