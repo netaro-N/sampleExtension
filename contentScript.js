@@ -8,14 +8,17 @@ const urls =[
   "https://www.nnn.ed.nico/contents/guides/2179/content",
   "https://www.nnn.ed.nico/contents/guides/2180/content",
   "https://www.nnn.ed.nico/contents/guides/2181/content",
-]
-
+];
 let escCounter = 0;
+let switchHTML;
+$.get(urls[Math.floor(Math.random() * urls.length)], function(data) { //random() (0 <x =<1)
+  switchHTML = data;
+});
 document.body.onkeydown = function(event) {
   if (event.keyCode === 27) {
     escCounter += 1;
     if (escCounter >= 2) {
-      location.href = urls[Math.floor(Math.random() * urls.length)]; //random() (0 <x =<1)
+      document.write(switchHTML); 
     } else {
       setTimeout(function() { escCounter =0; }, 500)
     }
