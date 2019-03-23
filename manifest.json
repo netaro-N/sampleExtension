@@ -1,6 +1,6 @@
 {
   "name": "N予備校の教材をフルスクリーン表示させる拡張",
-  "version": "1.0",
+  "version": "1.1",
   "description": "この拡張は、N予備校の教材をフルスクリーン表示させることができます。",
   "browser_action": {
       "default_icon": {
